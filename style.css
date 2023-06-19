@@ -2,4 +2,6 @@
 
 .paragraph {color: blue;}
 
-#h1 {color: #0099cc}
+#h1 [font-style: bold]
+
+.h1 {color: #0099cc}
