@@ -1,7 +1,1 @@
-#paragraph {font-style: italic;}
-
-.paragraph {color: blue;}
-
-#h1 {font-style: bold;}
-
-.h1 {color: #003333;}
+#h1 {font-weight: bold; color: #006666;}
