@@ -8,4 +8,27 @@ ul li {
     margin-left: 10px;
     text-align: center;
     }
+    nav a:link{
+        background-color: white;
+        }
+        nav a:hover, nav a:focus {
+        background-color: 00ccff;
+        }
+        nav a:active{
+        background-color: 0099cc;
+        }
+        
+        
+        /*position sub-menu or drop-down*/
+        nav ul>li ul {
+        position: absolute;
+        margin-top: 0;
+        margin-left: 100%;
+        display: none;
+        }
+        
+        /*special hover to display the drop-down*/
+        nav>ul>li:hover>ul{
+        display: block;
+        }
     
