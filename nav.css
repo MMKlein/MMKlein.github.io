@@ -1,7 +1,7 @@
 ul li {
     display: inline-block;
-    border: 3px dotted magenta;
-    width: 150px;
+    border: 3px #22155b;
+    width: 200px;
     list-style-type: none;
     padding: 15px 15px 15px 25px;
     margin-top: 0;
