@@ -1,4 +1,4 @@
-ul li {
+nav li {
     display: inline-block;
     border: 5px solid #22155b;
     width: 200px;
@@ -8,6 +8,7 @@ ul li {
     margin-left: 10px;
     text-align: center;
     }
+
     nav a:link{
         background-color: white;
         }
