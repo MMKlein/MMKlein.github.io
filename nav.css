@@ -19,9 +19,7 @@
             border: 5px solid #22155b;
             padding: 15px 15px 15px 15px;
             }
-            
-            The above code gives our main vertical navigation some styling and positioning. Now we add some code for our links and the drop-down part of our menu:
-            
+                        
             /*format all navigation <a> elements*/
             nav a:link{
             background-color: white;
@@ -39,7 +37,7 @@
             position: absolute;
             margin-top: 0;
             margin-left: 100%;
-            display: inline-block;
+            display: relative;
             }
             
             /*special hover to display the drop-down*/
