@@ -15,7 +15,7 @@
             }
             nav a {
             text-decoration: none;
-            display: block;
+            display: inline-block;
             border: 5px solid #22155b;
             padding: 15px 15px 15px 15px;
             }
@@ -39,7 +39,7 @@
             position: absolute;
             margin-top: 0;
             margin-left: 100%;
-            display: none;
+            display: inline-block;
             }
             
             /*special hover to display the drop-down*/
