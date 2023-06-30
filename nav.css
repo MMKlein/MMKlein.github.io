@@ -17,7 +17,7 @@
             }
             nav a {
             text-decoration: none;
-            display: inline-block;
+            display: inline;
             border: 5px solid #22155b;
             padding: 15px 15px 15px 15px;
             }
