@@ -34,8 +34,8 @@
             /*position sub-menu or drop-down*/
             nav>ul>li ul {
             position: absolute;
-            margin-top: 50px;
-            margin-left: 100%;
+            margin-top: 0;
+            margin-left: -5px;
             display: none;
             }
             
