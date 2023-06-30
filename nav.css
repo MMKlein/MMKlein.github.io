@@ -27,10 +27,10 @@
             background-color: white;
             }
             nav a:hover, nav a:focus {
-            background-color: 00ccff;
+            background-color: #00ccff;
             }
             nav a:active{
-            background-color: 0099cc;
+            background-color: #0099cc;
             }
             
             
