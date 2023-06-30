@@ -2,6 +2,7 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: inline-block;
             }
             nav>ul li {
             width: 150px; /*this is important to set so our drop-down doesn't go across the page*/
@@ -9,6 +10,7 @@
             text-align: center;
             font-weight: bold;
             color: #000000;
+            display: inline;
             }
             nav ul li {
             margin-bottom: 2px;
