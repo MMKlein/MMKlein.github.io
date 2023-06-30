@@ -12,9 +12,6 @@
             display: inline-block;
             margin-top: 10px;
             }
-            nav ul li {
-            margin-bottom: 2px;
-            }
             nav a {
             text-decoration: none;
             display: inline;
@@ -35,7 +32,7 @@
             
             
             /*position sub-menu or drop-down*/
-            nav ul>li ul {
+            nav>ul>li ul {
             position: absolute;
             margin-top: 0;
             margin-left: 100%;
