@@ -4,7 +4,7 @@
             padding: 0;
             }
             nav>ul li {
-            width: 150px; /*this is important to set so our drop-down doesn't go across the page*/
+            width: 200px; /*this is important to set so our drop-down doesn't go across the page*/
             position: relative; /*we must add a position to our main navigation bar so we can position a drop-down properly */
             text-align: center;
             font-weight: bold;
@@ -35,7 +35,7 @@
             nav>ul>li ul {
             position: absolute;
             margin-top: 0;
-            margin-left: -5px;
+            margin-left: 0;
             display: none;
             }
             
