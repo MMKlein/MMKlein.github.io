@@ -1,3 +1,16 @@
 h1 {
     color: #006666;
 }
+p::first-letter {
+    font-size: 50px; 
+}
+
+p:not(:first-child)::first-line {
+    text-indent: 1em;
+}
+
+textbox {
+    background-color: lightgrey;
+    padding: 10px;
+    display: inline-block;
+}
