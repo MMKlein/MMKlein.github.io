@@ -1,0 +1,51 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul li {
+    width: 200px; 
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline;
+    border: 5px solid #22155b;
+    padding: 15px;
+}
+
+nav a:link{
+    background-color: white;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #00ccff;
+}
+
+nav a:active{
+    background-color: #0099cc;
+}
+
+nav > ul > li ul {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    display: none;
+    z-index: 1;
+}
+
+nav > ul > li ul li {
+    line-height: 30px; 
+    padding: 5px 0; /* New padding */
+}
+
+nav ul > li:hover > ul {
+    display: block;
+}
