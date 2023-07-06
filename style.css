@@ -34,8 +34,12 @@ p:not(:first-child)::first-line {
   .aboutcolumn {
     grid-row: 3;
     display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+  }
+  .aboutcolumn:nth-child(2) {
+    grid-template-rows: 1fr;
   }
   
   .column .content {
