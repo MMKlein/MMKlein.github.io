@@ -44,17 +44,20 @@ p:not(:first-child)::first-line {
     background-color: #f1f1f1;
     padding-right: 20px;
     font-size: 25px;
+    grid-column: 1;
 }
 
 .aboutright-content {
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 10px;
+    grid-column: 2;
 }
 
 .blockquote-box {
     border: 2px solid lightblue;
     font-weight: bold;
     font-size: 20px;
+    grid-column: 1 / -1;
 }
 
 .aboutfooter {
