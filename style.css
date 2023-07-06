@@ -14,3 +14,29 @@ p:not(:first-child)::first-line {
     padding: 10px;
     display: inline-block;
 }
+.about {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: 5fr 20fr 5fr;
+    grid-gap: 10px;
+    height: 720px;
+}
+
+aboutheader {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+aboutfooter {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.about * {
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+}
