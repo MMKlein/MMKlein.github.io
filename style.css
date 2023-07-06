@@ -20,7 +20,7 @@ p:not(:first-child)::first-line {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr 1fr;
-   min-height: 100vh;
+    min-height: 100vh;
 }
 
 .aboutnav {
@@ -35,28 +35,21 @@ p:not(:first-child)::first-line {
     margin-bottom: 20px;
 }
 
-.content {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Update column order */
-    gap: 20px; /* Add space between the columns */
+.column {
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.left-content {
+.column .content {
     background-color: #f1f1f1;
     padding: 20px;
+    border: 2px solid lightgreen; /* Add border around left-side paragraphs */
 }
 
-.right-content {
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-
-.blockquote-box {
-    border: 2px solid lightblue;
-}
-
-.left-content p {
-    border: 2px solid lightgreen;
+.column .content:first-child {
+    border: 2px solid lightblue; /* Add border around the blockquote */
 }
 
 .aboutfooter {
