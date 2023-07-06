@@ -44,7 +44,8 @@ p:not(:first-child)::first-line {
 .aboutleft-content {
     background-color: #f1f1f1;
     padding: 20px;
-    font-size: 20px; }
+    font-size: 20px;
+}
 
 .aboutright-content {
     background-color: #f1f1f1;
@@ -53,7 +54,8 @@ p:not(:first-child)::first-line {
 
 .blockquote-box {
     border: 2px solid lightblue;
-    font-weight: bold; /* Make the blockquote text bold */
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .left-content p {
@@ -63,4 +65,5 @@ p:not(:first-child)::first-line {
 .aboutfooter {
     grid-row: 4;
     grid-column: 1 / -1;
+    text-align: center;
 }
