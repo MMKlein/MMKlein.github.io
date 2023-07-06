@@ -27,6 +27,10 @@ aboutheader {
     grid-column-end: 4;
 }
 
+aboutnav {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
 aboutfooter {
     grid-column-start: 1;
     grid-column-end: 4;
