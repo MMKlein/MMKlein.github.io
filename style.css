@@ -41,13 +41,12 @@ p:not(:first-child)::first-line {
     gap: 20px;
 }
 
-.left-content {
+.aboutleft-content {
     background-color: #f1f1f1;
     padding: 20px;
-    font-size: 20px; /* Increase font size of the paragraph */
-}
+    font-size: 20px; }
 
-.right-content {
+.aboutright-content {
     background-color: #f1f1f1;
     padding: 20px;
 }
