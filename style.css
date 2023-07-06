@@ -35,21 +35,30 @@ p:not(:first-child)::first-line {
     margin-bottom: 20px;
 }
 
-.column {
-    grid-row: 3;
-    display: flex;
-    flex-direction: column;
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.column .content {
+.left-content {
     background-color: #f1f1f1;
     padding: 20px;
-    border: 2px solid lightgreen; /* Add border around left-side paragraphs */
+    font-size: 20px; /* Increase font size of the paragraph */
 }
 
-.column .content:first-child {
-    border: 2px solid lightblue; /* Add border around the blockquote */
+.right-content {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.blockquote-box {
+    border: 2px solid lightblue;
+    font-weight: bold; /* Make the blockquote text bold */
+}
+
+.left-content p {
+    border: 2px solid lightgreen;
 }
 
 .aboutfooter {
