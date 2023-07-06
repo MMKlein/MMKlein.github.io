@@ -46,7 +46,9 @@ p:not(:first-child)::first-line {
     background-color: #f1f1f1;
     padding: 20px;
   }
-  
+  .aboutsingle-column {
+    grid-template-rows: 1fr;
+  }
   .aboutfooter {
     grid-row: 4;
     grid-column: 1 / -1;
