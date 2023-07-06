@@ -38,17 +38,13 @@ p:not(:first-child)::first-line {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
-  .aboutcolumn:nth-child(2) {
-    grid-template-rows: 1fr;
-  }
+
   
   .column .content {
     background-color: #f1f1f1;
     padding: 20px;
   }
-  .aboutsingle-column {
-    grid-template-rows: 1fr;
-  }
+ 
   .aboutfooter {
     grid-row: 4;
     grid-column: 1 / -1;
