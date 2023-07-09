@@ -92,3 +92,8 @@ footer {
     max-width: 50%;
     height: auto;
 }
+
+@media (max-width: 768px) {
+    .headshot {
+        max-width: 50%;
+    }
