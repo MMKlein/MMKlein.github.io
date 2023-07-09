@@ -16,6 +16,33 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <style>
+        .indexcontainer {
+            display: flex;
+            align-items: center;
+        }
+
+        .headshot {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .indexcontent {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .indexcontainer {
+                flex-direction: column;
+            }
+
+            .headshot {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -38,18 +65,16 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
     <h2>Let’s learn about UX writing – what it is, how to write better copy, and more!</h2>
     <main>
         <div class="indexcontainer">
-
-        <img class="headshot" src="headshot.jpg" alt="Madeline Klein's headshot">
-        <div class="indexcontent">
-
-        <p>
-            The primary goal of this website is to provide comprehensive education on the topic of UX writing. It familiarizes visitors with the concept of UX writing, its practical application in web development, and fundamental pillars of creating user-friendly and user-focused content.
-            <br>
-            <br>
-            Through informative, engaging, and visual content, the website empowers individuals with the necessary skills and knowledge to enhance their own proficiency in UX writing. By offering insights into the significance of UX writing and its impact on user experiences, the website strives to instill a sense of confidence and competence in its readers. It also aims to cultivate a genuine interest and enthusiasm for the field, inspiring visitors to further explore and engage with UX writing as an integral part of their professional growth.
-        </p>
+            <img class="headshot" src="headshot.jpg" alt="Madeline Klein's headshot">
+            <div class="indexcontent">
+                <p>
+                    The primary goal of this website is to provide comprehensive education on the topic of UX writing. It familiarizes visitors with the concept of UX writing, its practical application in web development, and fundamental pillars of creating user-friendly and user-focused content.
+                    <br>
+                    <br>
+                    Through informative, engaging, and visual content, the website empowers individuals with the necessary skills and knowledge to enhance their own proficiency in UX writing. By offering insights into the significance of UX writing and its impact on user experiences, the website strives to instill a sense of confidence and competence in its readers. It also aims to cultivate a genuine interest and enthusiasm for the field, inspiring visitors to further explore and engage with UX writing as an integral part of their professional growth.
+                </p>
+            </div>
         </div>
-    </div>
         <footer>Madeline Klein. mmkth9@umsystem.edu © Madeline Klein 2023.</footer>
     </main>
 </body>
