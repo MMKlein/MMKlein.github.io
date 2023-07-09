@@ -11,48 +11,75 @@ Developed: June 16, 2023
 Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
 ******************************************************************************
 -->
-               <meta charset="utf-8">
-               <title>Home Page</title>
-               <link rel="stylesheet" href="style.css">
-               <link rel="stylesheet" href="nav.css">
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
-<nav>
-    <ul>
-<li>
-    <a href="index.html"> Home</a> </li>
-<li>
-    <a href="about.html"> About </a> </li>
-    <li>
-        <a href="learn.html"> Learn </a>
-        <ul><li> <a href="#link1.html"> Link 1</a></li>
-            <li><a href="#link2.html"> Link 2</a></li>
-            <li><a href="#link3.html"> Link 1</a></li></ul>
-    </li>
-        <a href="reflection.html"> Sources </a> </li>
-    </li>
-    <li> 
-        <a href="#contact.html"> Contact </a> </li>
-    </li>
-</ul>
-</nav>
-<h1 id = "h1">Welcome to UX Writing with Mads.</h1>
-<h2>Let’s learn about UX writing – what it is, how to write better copy, and more!</h2> 
-<main>
-<p>
-    The primary goal of this website is to provide comprehensive education on the topic of UX
-writng. It familiarizes visitors with the concept of UX writing, its practical applicatoon in web
-development, and fundamental pillars of creating user-friendly and user-focused content.
-<br>
-<br>
-Through informative, engaging, and visual content, the website empowers individuals with the
-necessary skills and knowledge to enhance their own proficiency in UX writing. By offering
-insights into the significance of UX writing and its impact on user experiences, the website
-strives to instill a sense of confidence and competence in its readers. It also aims to cultivate a
-genuine interest and enthusiasm for the field, inspiring visitors to further explore and engage
-with UX writing as an integral part of their professional growth.
-</p>
-<footer>Madeline Klein. mmkth9@umsystem.edu Copyright Madeline Klein 2023. 
-</footer>
-</main>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="learn.html">Learn</a>
+                <ul>
+                    <li><a href="#link1.html">Link 1</a></li>
+                    <li><a href="#link2.html">Link 2</a></li>
+                    <li><a href="#link3.html">Link 1</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Sources</a></li>
+            <li><a href="#contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1 id="h1">Welcome to UX Writing with Mads.</h1>
+    <h2>Let’s learn about UX writing – what it is, how to write better copy, and more!</h2>
+    <main>
+        <p>
+            The primary goal of this website is to provide comprehensive education on the topic of UX writing. It familiarizes visitors with the concept of UX writing, its practical application in web development, and fundamental pillars of creating user-friendly and user-focused content.
+            <br>
+            <br>
+            Through informative, engaging, and visual content, the website empowers individuals with the necessary skills and knowledge to enhance their own proficiency in UX writing. By offering insights into the significance of UX writing and its impact on user experiences, the website strives to instill a sense of confidence and competence in its readers. It also aims to cultivate a genuine interest and enthusiasm for the field, inspiring visitors to further explore and engage with UX writing as an integral part of their professional growth.
+        </p>
+        <footer>Madeline Klein. mmkth9@umsystem.edu © Madeline Klein 2023.</footer>
+    </main>
 </body>
 </html>
