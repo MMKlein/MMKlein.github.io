@@ -35,7 +35,7 @@ body {
     padding-bottom: 20px;
 }
 
-.aboutheader {
+.header {
     background-color: lightgray;
     padding: 20px;
     text-align: center;
@@ -70,11 +70,6 @@ body {
     margin-bottom: 20px;
 }
 
-.aboutfooter {
-    background-color: lightgray;
-    padding: 10px;
-    text-align: center;
-}
 
 .column {
     display: flex;
