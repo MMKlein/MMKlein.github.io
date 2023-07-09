@@ -1,58 +1,104 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-        <!--
-    *****************************************************************************
-    Title:  References Page
-    Use:  To cite source content. 
-    Author:  Madeline Klein
-    School/Term:  University of Missouri, Summer 2024
-    Developed: July 2, 2023
-    Tested:  July 2, 2023; Passed on Firefox and Chrome browsers.
-    ******************************************************************************
-    -->
-               <meta charset="utf-8">
-               <title>References Page</title>
-               <link rel="stylesheet" href="style.css">
-               <link rel="stylesheet" href="nav.css">
+    <!--
+*****************************************************************************
+Title:  References Page
+Use:  To cite source content. 
+Author:  Madeline Klein
+School/Term:  University of Missouri, Summer 2024
+Developed: July 2, 2023
+Tested:  July 2, 2023; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+    <meta charset="utf-8">
+    <title>References Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .text-box {
+            background-color: #f1f1f1;
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+    </style>
 </head>
-<nav>
-    <ul>
-<li>
-    <a href="index.html"> Home</a> </li>
-<li>
-    <a href="about.html"> About </a> </li>
-    <li>
-        <a href="learn.html"> Learn </a>
-        <ul><li> <a href="#link1.html"> Link 1</a></li>
-            <li><a href="#link2.html"> Link 2</a></li>
-            <li><a href="#link3.html"> Link 1</a></li></ul>
-    </li>
-        <a href="reflection.html"> Sources </a> </li>
-    </li>
-    <li> 
-        <a href="#contact.html"> Contact </a> </li>
-    </li>
-</ul>
-</nav>
-        <header>
-    <h1>Sources</h1>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="learn.html">Learn</a>
+                <ul>
+                    <li><a href="#link1.html">Link 1</a></li>
+                    <li><a href="#link2.html">Link 2</a></li>
+                    <li><a href="#link3.html">Link 1</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Sources</a></li>
+            <li><a href="#contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Sources</h1>
     </header>
-    <h2>These are the sources used to create this website. </h2> 
+    <h2>These are the sources used to create this website.</h2>
     <main>
         <div class="text-box">
             <p>
-        <ol>
-<li> What is a UX writer? writing for the user. Coursera. (n.d.).      https://www.coursera.org/articles/whats-a-ux-writer </li>
-<li> 9 essential skills for UX Designers in 2023. Coursera. (n.d.-a). https://www.coursera.org/articles/essential-skills-for-ux-designers </li>
-<li>World Leaders in Research-Based User Experience. (n.d.). UX writing: Study Guide. Nielsen Norman Group. https://www.nngroup.com/articles/ux-writing-study-guide/ </li>
-<li>YouTube. (2019). UX Writing in 60 seconds! YouTube. Retrieved June 11, 2023, from https://www.youtube.com/watch?v=t5Dq6GnQwTo.  </li>
-<li>Interaction Design Foundation. (2022, August 11). What is user experience (UX) design?. The Interaction Design Foundation. https://www.interaction-design.org/literature/topics/ux-design   </li>
-<li>Oirech, M. (2020, August 11). Dear companies, here’s how to hire a UX writer • UX content collective. UX Content Collective. https://uxcontent.com/dear-companies-heres-how-to-hire-a-ux-writer/ </li>
-    </ol> </p>
-</div>   
- 
-<footer>Madeline Klein. mmkth9@umsystem.edu Copyright Madeline Klein 2023. </footer>
+                <ol>
+                    <li>What is a UX writer? writing for the user. Coursera. (n.d.). https://www.coursera.org/articles/whats-a-ux-writer</li>
+                    <li>9 essential skills for UX Designers in 2023. Coursera. (n.d.-a). https://www.coursera.org/articles/essential-skills-for-ux-designers</li>
+                    <li>World Leaders in Research-Based User Experience. (n.d.). UX writing: Study Guide. Nielsen Norman Group. https://www.nngroup.com/articles/ux-writing-study-guide/</li>
+                    <li>YouTube. (2019). UX Writing in 60 seconds! YouTube. Retrieved June 11, 2023, from https://www.youtube.com/watch?v=t5Dq6GnQwTo.</li>
+                    <li>Interaction Design Foundation. (2022, August 11). What is user experience (UX) design?. The Interaction Design Foundation. https://www.interaction-design.org/literature/topics/ux-design</li>
+                    <li>Oirech, M. (2020, August 11). Dear companies, here’s how to hire a UX writer • UX content collective. UX Content Collective. https://uxcontent.com/dear-companies-heres-how-to-hire-a-ux-writer/</li>
+                </ol>
+            </p>
+        </div>
+        <footer>Madeline Klein. mmkth9@umsystem.edu © Madeline Klein 2023.</footer>
     </main>
-    </body>
-    </html>
+</body>
+</html>
