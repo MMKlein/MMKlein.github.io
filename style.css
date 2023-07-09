@@ -88,12 +88,7 @@ footer {
     text-align: center;
 }
 
-.headshot {
-    max-height: 50%;
-    width: auto;
-}
-
-@media (max-height: 500px) {
+@media (max-height: 100px) {
     .headshot {
-        max-height: 50%;
+        width: auto;
     }
