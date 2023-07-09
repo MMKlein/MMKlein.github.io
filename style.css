@@ -90,31 +90,26 @@ footer {
 
     .indexcontainer {
         display: flex;
-        flex-wrap: wrap;
-    }
+            align-items: center;
+        }
 
-    .headshot {
-        max-width: 100%;
-        height: auto;
-        flex: 0 0 40%; 
-        margin-right: 20px; 
-    }
+        .headshot {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px; 
+        }
 
     .indexcontent {
-        flex: 1 1 60%; 
+        flex: 1;
     }
 
-    @media (max-width: 768px) {
+    @media (max-height: 100px) {
         .indexcontainer {
             flex-direction: column;
         }
 
-        .headshot,
-            .indexcontent {
-                flex: 1 1 100%;
-            }
-
-            .headshot {
-                margin-right: 0;
-                margin-bottom: 20px; 
-            }
+        .headshot {
+            margin-right: 0;
+            margin-bottom: 20px; 
+        }
+    }
