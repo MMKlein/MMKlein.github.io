@@ -87,3 +87,8 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+.headshot {
+    max-width: 100%;
+    height: auto;
+}
