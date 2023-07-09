@@ -1,53 +1,85 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-        <!--
-    *****************************************************************************
-    Title: Learn
-    Use:  To teach users about UX writing concepts. 
-    Author:  Madeline Klein
-    School/Term:  University of Missouri, Summer 2024
-    Developed: June 29, 2023
-    Tested:  June 29, 2023; Passed on Firefox and Chrome browsers.
-    ******************************************************************************
-    -->
-               <meta charset="utf-8">
-               <title>Learn</title>
-               <link rel="stylesheet" href="style.css">
-               <link rel="stylesheet" href="nav.css">
+    <!--
+*****************************************************************************
+Title: Learn
+Use:  To teach users about UX writing concepts. 
+Author:  Madeline Klein
+School/Term:  University of Missouri, Summer 2024
+Developed: June 29, 2023
+Tested:  June 29, 2023; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+    <meta charset="utf-8">
+    <title>Learn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <ul>
-    <li>
-        <a href="index.html"> Home</a> </li>
-    <li>
-        <a href="about.html"> About </a> </li>
-        <li>
-            <a href="learn.html"> Learn </a>
-            <ul><li> <a href="#link1.html"> Link 1</a></li>
-                <li><a href="#link2.html"> Link 2</a></li>
-                <li><a href="#link3.html"> Link 1</a></li></ul>
-        </li>
-            <a href="reflection.html"> Sources </a> </li>
-        </li>
-        <li> 
-            <a href="#contact.html"> Contact </a> </li>
-        </li>
-    </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="learn.html">Learn</a>
+                <ul>
+                    <li><a href="#link1.html">Link 1</a></li>
+                    <li><a href="#link2.html">Link 2</a></li>
+                    <li><a href="#link3.html">Link 1</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Sources</a></li>
+            <li><a href="#contact.html">Contact</a></li>
+        </ul>
     </nav>
-        <header>
-    <h1>Welcome to UX Writing with Mads.</h1>
+    <header>
+        <h1>Welcome to UX Writing with Mads.</h1>
     </header>
-    <h2>Learn copy h2</h2> 
+    <h2>Learn copy h2</h2>
     <h3>Learn copy h3</h3>
     <main>
-    <p>
-
-    <br>
-    
-    </p>
-    <footer>Madeline Klein. mmkth9@umsystem.edu Copyright Madeline Klein 2023. </footer>
+        <p>
+            <br>
+        </p>
+        <footer>Madeline Klein. mmkth9@umsystem.edu © Madeline Klein 2023.</footer>
     </main>
-    </body>
-    </html>
+</body>
+</html>
