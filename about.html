@@ -18,11 +18,53 @@
     <link rel="stylesheet" href="nav.css">
     <style>
         @media print {
+        *{
+            background: transparent !important; 
+            color: #000000 !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+        .nav {
+            display: none;
+        }
+        .header {
+            margin-bottom: 0;
+            border: none;
+            text-align: center;
+        }
+        a[href^="http:"] ::after {
+            content: " [" attr(href) "]";
+            color: blue;
+        }
+        @page {
+            margin: 1in;
+        }
+        .blockquote-box {
+            margin-bottom: 0;
+            font-size: 10px;
+            padding: 5px;
+        }
+        .textbox {
+            margin-bottom: 5px;
+        }
+        .aboutnav {
+            padding-bottom: 0;
+            display: none;
+        }
+        .aboutleft-content {
+            padding: 5px;
+            font-size: 10px;
+        }
+        .aboutright-content {
+            padding: 5px;
+
+        }
             body{
-                padding: 20px;
+                padding: 5px;
             }
             .content{
                 display: block;
+                margin-bottom: 5px;
             }
             .textbox {
                 margin-bottom: 10px;
