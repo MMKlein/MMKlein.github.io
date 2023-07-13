@@ -28,6 +28,13 @@
         @page {
             margin: 1in;
         }
+        .blockquote-box {
+            margin-bottom: none;
+        }
+        .p {
+            margin-bottom: none;
+        }
+
 }
 
 h1 {
