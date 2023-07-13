@@ -29,10 +29,10 @@
             margin: 1in;
         }
         .blockquote-box {
-            margin-bottom: none;
+            margin-bottom: 0;
         }
-        .p {
-            margin-bottom: none;
+        .textbox {
+            margin-bottom: 5px;
         }
 
 }
