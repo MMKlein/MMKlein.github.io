@@ -13,8 +13,8 @@
             box-shadow: none !important;
             text-shadow: none !important;
         }
-        .nav { 
-            display: none; 
+        .nav {
+            display: none;
         }
         .header {
             margin-bottom: 0;
@@ -30,11 +30,27 @@
         }
         .blockquote-box {
             margin-bottom: 0;
+            font-size: 12px;
+            padding: 5px;
         }
         .textbox {
             margin-bottom: 5px;
         }
+        .aboutnav {
+            padding-bottom: 0;
+            display: none;
+        }
+        .content {
+            margin-bottom: 5px;
+        }
+        .aboutleft-content {
+            padding: 5px;
+            font-size: 12px;
+        }
+        .aboutright-content {
+            padding: 5px;
 
+}
 }
 
 h1 {
