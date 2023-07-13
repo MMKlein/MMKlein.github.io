@@ -21,7 +21,7 @@
             border: none;
             text-align: center;
         }
-        a [href] :: after {
+        a[href^="http:"] ::after {
             content: " [" attr(href) "]";
             color: blue;
         }
@@ -30,7 +30,7 @@
         }
         .blockquote-box {
             margin-bottom: 0;
-            font-size: 12px;
+            font-size: 10px;
             padding: 5px;
         }
         .textbox {
@@ -45,12 +45,12 @@
         }
         .aboutleft-content {
             padding: 5px;
-            font-size: 12px;
+            font-size: 10px;
         }
         .aboutright-content {
             padding: 5px;
 
-}
+        }
 }
 
 h1 {
