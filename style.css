@@ -1,3 +1,11 @@
+@font-face { 
+
+    font-family: Montserrat; /*this is where we give our font a name so we can use it!*/
+    
+    src: url("Montserrat-Regular.ttf"); /*remember this is how we link to files in CSS!*/
+    
+    }
+
 h1 {
     color: #006666;
 }
@@ -8,6 +16,10 @@ p::first-letter {
 
 p:not(:first-child)::first-line {
     text-indent: 1em;
+}
+
+p{
+font-family: Montserrat;
 }
 
 body {
@@ -87,3 +99,4 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
