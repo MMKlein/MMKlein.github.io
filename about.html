@@ -96,9 +96,10 @@
             <li>
                 <a href="learn.html">Learn</a>
                 <ul>
-                    <li><a href="#link1.html">Link 1</a></li>
-                    <li><a href="#link2.html">Link 2</a></li>
-                    <li><a href="#link3.html">Link 1</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToBox(1)">UX Writing Basics</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToBox(2)">Implement UX Writing on Your Team</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToBox(3)">Pillars of UX Content</a>
+                    </li>
                 </ul>
             </li>
             <li><a href="reflection.html">Sources</a></li>
@@ -157,5 +158,13 @@
 <footer class="footer">
     Madeline Klein. <img class="emailicon" src="email.jpg" alt="email icon">mmkth9@umsystem.edu <img class="phone" src="phone.jpg" alt="phone icon"> 1+888-888-8888 Copyright Madeline Klein 2023. 
 </footer>
+<script>
+    function scrollToBox(boxNumber) {
+        const boxes = document.getElementsByClassName('box');
+        if (boxNumber >= 1 && boxNumber <= boxes.length) {
+            boxes[boxNumber - 1].scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+</script>
 </body>
 </html>
