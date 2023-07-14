@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <!--
+    *****************************************************************************
+    Title:  Contact Page
+    Use:  To provide contact information.
+    Author:  Madeline Klein
+    School/Term:  University of Missouri, Summer 2024
+    Developed: June 16, 2023
+    Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
+    ******************************************************************************
+    -->
+               <meta charset="utf-8">
+               <title>Contact Page</title>
+</head>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+            <a href="learn.html">Learn</a>
+            <ul>
+                <li><a href="learn.html#box1">UX Writing Basics</a></li>
+                <li><a href="learn.html#box2">Implement UX Writing on Your Team</a></li>           
+                <li><a href="learn.html#box3">Pillars of UX Content</a></li>
+            </ul>
+        </li>
+        <li><a href="reflection.html">Sources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+        <header>
+    <h1>Welcome to UX Writing with Mads.</h1>
+    </header>
+    <h2>h2</h2> 
+    <h3>h3</h3>
+    <main>
+    <p>
+
+    <br>
+    
+    </p>
+    <footer class="footer">
+        Madeline Klein. <img class="emailicon" src="email.jpg" alt="email icon">mmkth9@umsystem.edu <img class="phone" src="phone.jpg" alt="phone icon"> 1+888-888-8888 Copyright Madeline Klein 2023. 
+    </footer>
+    </main>
+    <script>
+        function scrollToBox(boxNumber) {
+            const boxes = document.getElementsByClassName('box');
+            if (boxNumber >= 1 && boxNumber <= boxes.length) {
+                boxes[boxNumber - 1].scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+    </body>
+    </html>
