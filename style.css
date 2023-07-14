@@ -103,7 +103,14 @@ footer {
 }
 
 .emailicon,
-        .phone {
-            vertical-align: middle; /* Align the icons vertically */
-        }
+.phone {
+  width: 16px; 
+  height: 16px; 
+  vertical-align: middle; 
+  transition: transform 0.3s ease; 
+}
 
+.emailicon:hover,
+.phone:hover {
+  transform: scale(1.2); 
+}
