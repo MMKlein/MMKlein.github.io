@@ -17,6 +17,38 @@ Tested:  July 2, 2023; Passed on Firefox and Chrome browsers.
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
    
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: #f1f1f1;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -52,7 +84,42 @@ Tested:  July 2, 2023; Passed on Firefox and Chrome browsers.
                 </ol>
             </p>
         </div>
-        <footer>Madeline Klein. <img class="emailicon" src="email.jpg" alt="email icon">mmkth9@umsystem.edu <img class="phone" src="phone.jpg" alt="phone icon"> 1+888-888-8888 Copyright Madeline Klein 2023. </footer>
+        <table>
+            <caption>References</caption>
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>What is a UX writer? writing for the user. Coursera. (n.d.).</td>
+                    <td><a href="https://www.coursera.org/articles/whats-a-ux-writer">Link</a></td>
+                </tr>
+                <tr>
+                    <td>9 essential skills for UX Designers in 2023. Coursera. (n.d.-a).</td>
+                    <td><a href="https://www.coursera.org/articles/essential-skills-for-ux-designers">Link</a></td>
+                </tr>
+                <tr>
+                    <td>World Leaders in Research-Based User Experience. (n.d.). UX writing: Study Guide. Nielsen Norman Group.</td>
+                    <td><a href="https://www.nngroup.com/articles/ux-writing-study-guide/">Link</a></td>
+                </tr>
+                <tr>
+                    <td>YouTube. (2019). UX Writing in 60 seconds! YouTube. Retrieved June 11, 2023.</td>
+                    <td><a href="https://www.youtube.com/watch?v=t5Dq6GnQwTo">Link</a></td>
+                </tr>
+                <tr>
+                    <td>Interaction Design Foundation. (2022, August 11). What is user experience (UX) design?. The Interaction Design Foundation.</td>
+                    <td><a href="https://www.interaction-design.org/literature/topics/ux-design">Link</a></td>
+                </tr>
+                <tr>
+                    <td>Oirech, M. (2020, August 11). Dear companies, here’s how to hire a UX writer • UX content collective. UX Content Collective.</td>
+                    <td><a href="https://uxcontent.com/dear-companies-heres-how-to-hire-a-ux-writer/">Link</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <footer>Madeline Klein. <img class="emailicon" src="email.jpg" alt="email icon">mmkth9@umsystem.edu <img class="phone" src="phone.jpg" alt="phone icon"> 1+888-888-8888</footer>
     </main>
     <script>
         function scrollToBox(boxNumber) {
