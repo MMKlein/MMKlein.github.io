@@ -8,6 +8,10 @@
    
 h1 {
     color: #006666;
+    padding: 10px;
+}
+h3{
+    padding: 10px;
 }
 
 p::first-letter {
