@@ -91,7 +91,9 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
         <div class="form-container">
             <div id="form-submitted-banner" class="form-submitted-banner">Form submitted successfully!</div>
             <h2>Contact Me</h2>
-            <form id="contact-form" action="submit.php" method="post">
+            <form id="contact-form" action="mailto:mmkth9@umsystem.edu?Subject=Educational%20Website%20Contact" method="post" enctype="text/plain">
+
+                >
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="first-name" placeholder="First name" required>
 
@@ -121,8 +123,6 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
         window.onload = function() {
             document.getElementById('first-name').focus();
         };
-
-        // Form submission handler
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
             document.getElementById('form-submitted-banner').classList.add('form-submitted');
