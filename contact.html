@@ -1,55 +1,103 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-        <!--
-    *****************************************************************************
-    Title:  Contact Page
-    Use:  To provide contact information.
-    Author:  Madeline Klein
-    School/Term:  University of Missouri, Summer 2024
-    Developed: June 16, 2023
-    Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
-    ******************************************************************************
-    -->
-               <meta charset="utf-8">
-               <title>Contact Page</title>
-               <link rel="stylesheet" href="style.css">
-               <link rel="stylesheet" href="nav.css">
-               <style>
-                
-               </style>
-</head>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li>
-            <a href="learn.html">Learn</a>
-            <ul>
-                <li><a href="learn.html#box1">UX Writing Basics</a></li>
-                <li><a href="learn.html#box2">Implement UX Writing on Your Team</a></li>           
-                <li><a href="learn.html#box3">Pillars of UX Content</a></li>
-            </ul>
-        </li>
-        <li><a href="reflection.html">Sources</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-        <header>
-    <h1>UX Writing with Mads.</h1>
-    </header>
-    <h2>h2</h2> 
-    <h3>h3</h3>
-    <main>
-    <p>
+    <!--
+*****************************************************************************
+Title:  Contact Page
+Use:  To provide contact information.
+Author:  Madeline Klein
+School/Term:  University of Missouri, Summer 2024
+Developed: June 16, 2023
+Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+    <meta charset="utf-8">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
 
-    <br>
-    
-    </p>
-    <footer class="footer">
-        Madeline Klein. <img class="emailicon" src="email.jpg" alt="email icon">mmkth9@umsystem.edu <img class="phone" src="phone.jpg" alt="phone icon"> 1+888-888-8888 Copyright Madeline Klein 2023. 
-    </footer>
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #333366;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="learn.html">Learn</a>
+                <ul>
+                    <li><a href="learn.html#box1">UX Writing Basics</a></li>
+                    <li><a href="learn.html#box2">Implement UX Writing on Your Team</a></li>           
+                    <li><a href="learn.html#box3">Pillars of UX Content</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Sources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>UX Writing with Mads.</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Contact Me</h2>
+            <form action="learn.html" method="post">
+
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </div>
     </main>
+    <footer class="footer">
+        Madeline Klein. <img class="emailicon" src="email.jpg" alt="email icon">mmkth9@umsystem.edu <img class="phone" src="phone.jpg" alt="phone icon"> 1+888-888-8888
+    </footer>
     <script>
         function scrollToBox(boxNumber) {
             const boxes = document.getElementsByClassName('box');
@@ -57,6 +105,9 @@
                 boxes[boxNumber - 1].scrollIntoView({ behavior: 'smooth' });
             }
         }
+        window.onload = function() {
+            document.getElementById('first-name').focus();
+        };
     </script>
-    </body>
-    </html>
+</body>
+</html>
