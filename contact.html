@@ -48,11 +48,16 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
         }
 
         .form-submitted-banner {
+            display: none;
             background-color: #4CAF50;
             color: white;
             padding: 10px;
             margin-bottom: 20px;
             text-align: center;
+        }
+
+        .form-submitted {
+            display: block !important;
         }
 
         @media (max-width: 768px) {
@@ -86,7 +91,7 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
         <div class="form-container">
             <?php
             if ($_SERVER["REQUEST_METHOD"] === "POST") {
-                echo '<div class="form-submitted-banner">Form submitted successfully!</div>';
+                echo '<div class="form-submitted-banner form-submitted">Form submitted successfully!</div>';
             }
             ?>
             <h2>Contact Me</h2>
@@ -120,6 +125,12 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
         window.onload = function() {
             document.getElementById('first-name').focus();
         };
+
+        // Show form submitted banner
+        const formSubmittedBanner = document.querySelector('.form-submitted-banner');
+        if (formSubmittedBanner) {
+            formSubmittedBanner.classList.add('form-submitted');
+        }
     </script>
 </body>
 </html>
