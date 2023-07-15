@@ -89,13 +89,9 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
     </header>
     <main>
         <div class="form-container">
-            <?php
-            if ($_SERVER["REQUEST_METHOD"] === "POST") {
-                echo '<div class="form-submitted-banner form-submitted">Form submitted successfully!</div>';
-            }
-            ?>
+            <div id="form-submitted-banner" class="form-submitted-banner">Form submitted successfully!</div>
             <h2>Contact Me</h2>
-            <form action="contact.html" method="post">
+            <form id="contact-form" action="" method="post">
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
 
@@ -126,11 +122,11 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
             document.getElementById('first-name').focus();
         };
 
-        // Show form submitted banner
-        const formSubmittedBanner = document.querySelector('.form-submitted-banner');
-        if (formSubmittedBanner) {
-            formSubmittedBanner.classList.add('form-submitted');
-        }
+        // Form submission handler
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('form-submitted-banner').classList.add('form-submitted');
+        });
     </script>
 </body>
 </html>
