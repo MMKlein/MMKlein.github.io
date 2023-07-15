@@ -35,7 +35,7 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
         }
 
         .form-container input[type="submit"] {
-            background-color: #333366;
+            background-color: #006666;
             color: white;
             padding: 12px 20px;
             border: none;
@@ -44,7 +44,15 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
         }
 
         .form-container input[type="submit"]:hover {
-            background-color: #555;
+            background-color: #499999;
+        }
+
+        .form-submitted-banner {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         @media (max-width: 768px) {
@@ -76,9 +84,13 @@ Tested:  June 16, 2023; Passed on Firefox and Chrome browsers.
     </header>
     <main>
         <div class="form-container">
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] === "POST") {
+                echo '<div class="form-submitted-banner">Form submitted successfully!</div>';
+            }
+            ?>
             <h2>Contact Me</h2>
-            <form action="learn.html" method="post">
-
+            <form action="contact.html" method="post">
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
 
